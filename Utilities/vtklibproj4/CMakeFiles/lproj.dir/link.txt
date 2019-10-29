@@ -1,0 +1,1 @@
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -g    -rdynamic CMakeFiles/lproj.dir/lproj.c.o  -o ../../bin/lproj ../../bin/libvtkproj4.a -lm 

@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../bin/libMapReduceMPI.a  CMakeFiles/MapReduceMPI.dir/mapreduce.cpp.o CMakeFiles/MapReduceMPI.dir/keyvalue.cpp.o CMakeFiles/MapReduceMPI.dir/keymultivalue.cpp.o CMakeFiles/MapReduceMPI.dir/irregular.cpp.o CMakeFiles/MapReduceMPI.dir/hash.cpp.o CMakeFiles/MapReduceMPI.dir/memory.cpp.o CMakeFiles/MapReduceMPI.dir/error.cpp.o
+/usr/bin/ranlib ../../../bin/libMapReduceMPI.a

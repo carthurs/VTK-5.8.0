@@ -1,0 +1,1601 @@
+Determining size of __int64 failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_f5c4f/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_f5c4f.dir/build.make CMakeFiles/cmTC_f5c4f.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f5c4f.dir/VTK_SIZEOF___INT64.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc    -o CMakeFiles/cmTC_f5c4f.dir/VTK_SIZEOF___INT64.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CheckTypeSize/VTK_SIZEOF___INT64.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CheckTypeSize/VTK_SIZEOF___INT64.c:23:22: error: ‘__int64’ undeclared here (not in a function); did you mean ‘__int64_t’?
+ #define SIZE (sizeof(__int64))
+                      ^
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CheckTypeSize/VTK_SIZEOF___INT64.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+gmake[1]: *** [CMakeFiles/cmTC_f5c4f.dir/build.make:66: CMakeFiles/cmTC_f5c4f.dir/VTK_SIZEOF___INT64.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_f5c4f/fast] Error 2
+
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CheckTypeSize/VTK_SIZEOF___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function getsockname exists in the socket failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_eb09c/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_eb09c.dir/build.make CMakeFiles/cmTC_eb09c.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_eb09c.dir/CheckFunctionExists.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=getsockname   -o CMakeFiles/cmTC_eb09c.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_eb09c
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_eb09c.dir/link.txt --verbose=1
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=getsockname    -rdynamic CMakeFiles/cmTC_eb09c.dir/CheckFunctionExists.c.o  -o cmTC_eb09c -lsocket 
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: cannot find -lsocket
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_eb09c.dir/build.make:98: cmTC_eb09c] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_eb09c/fast] Error 2
+
+
+Determining if the include file iostream.h exists failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_5362e/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_5362e.dir/build.make CMakeFiles/cmTC_5362e.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_5362e.dir/CheckIncludeFile.cxx.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicxx    -Wno-deprecated    -o CMakeFiles/cmTC_5362e.dir/CheckIncludeFile.cxx.o -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFile.cxx:1:10: fatal error: iostream.h: No such file or directory
+ #include <iostream.h>
+          ^~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_5362e.dir/build.make:66: CMakeFiles/cmTC_5362e.dir/CheckIncludeFile.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_5362e/fast] Error 2
+
+
+Checking for non-standard argument to stl allocator<>::max_size failed to compile with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/kwsys/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_bed49/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_bed49.dir/build.make CMakeFiles/cmTC_bed49.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/kwsys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_bed49.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicxx  -DKWSYS_STL_HAVE_STD=1 -DTEST_KWSYS_STL_HAS_ALLOCATOR_MAX_SIZE_ARGUMENT  -Wno-deprecated    -o CMakeFiles/cmTC_bed49.dir/kwsysPlatformTestsCXX.cxx.o -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/kwsys/kwsysPlatformTestsCXX.cxx
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/kwsys/kwsysPlatformTestsCXX.cxx: In function ‘void f(const std::allocator<char>&)’:
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/kwsys/kwsysPlatformTestsCXX.cxx:247:25: error: no matching function for call to ‘std::allocator<char>::max_size(long unsigned int) const’
+   a.max_size(sizeof(int));
+                         ^
+In file included from /usr/include/c++/7/x86_64-suse-linux/bits/c++allocator.h:33:0,
+                 from /usr/include/c++/7/bits/allocator.h:46,
+                 from /usr/include/c++/7/memory:63,
+                 from /home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/kwsys/kwsysPlatformTestsCXX.cxx:244:
+/usr/include/c++/7/ext/new_allocator.h:129:7: note: candidate: __gnu_cxx::new_allocator<_Tp>::size_type __gnu_cxx::new_allocator<_Tp>::max_size() const [with _Tp = char; __gnu_cxx::new_allocator<_Tp>::size_type = long unsigned int]
+       max_size() const _GLIBCXX_USE_NOEXCEPT
+       ^~~~~~~~
+/usr/include/c++/7/ext/new_allocator.h:129:7: note:   candidate expects 0 arguments, 1 provided
+gmake[1]: *** [CMakeFiles/cmTC_bed49.dir/build.make:66: CMakeFiles/cmTC_bed49.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/kwsys/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_bed49/fast] Error 2
+
+
+Checking whether "<>" is needed for template friends failed to compile with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/kwsys/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_b8465/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_b8465.dir/build.make CMakeFiles/cmTC_b8465.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/kwsys/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_b8465.dir/kwsysPlatformTestsCXX.cxx.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicxx  -DTEST_KWSYS_CXX_HAS_NULL_TEMPLATE_ARGS  -Wno-deprecated    -o CMakeFiles/cmTC_b8465.dir/kwsysPlatformTestsCXX.cxx.o -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/kwsys/kwsysPlatformTestsCXX.cxx
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/kwsys/kwsysPlatformTestsCXX.cxx:132:21: warning: friend declaration ‘int f(A<T>&)’ declares a non-template function [-Wnon-template-friend]
+   friend int f(A<T>&);
+                     ^
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/kwsys/kwsysPlatformTestsCXX.cxx:132:21: note: (if this is not what you intended, make sure the function template has already been declared and add <> after the function name here) 
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/kwsys/kwsysPlatformTestsCXX.cxx: In instantiation of ‘int f(A<T>&) [with T = int]’:
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/kwsys/kwsysPlatformTestsCXX.cxx:138:23:   required from here
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/kwsys/kwsysPlatformTestsCXX.cxx:137:46: error: ‘int A<int>::x’ is private within this context
+ template <class T> int f(A<T>& a) { return a.x = 0; }
+                                            ~~^
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/kwsys/kwsysPlatformTestsCXX.cxx:134:7: note: declared private here
+   int x;
+       ^
+gmake[1]: *** [CMakeFiles/cmTC_b8465.dir/build.make:66: CMakeFiles/cmTC_b8465.dir/kwsysPlatformTestsCXX.cxx.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/kwsys/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_b8465/fast] Error 2
+
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_14dab/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_14dab.dir/build.make CMakeFiles/cmTC_14dab.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_14dab.dir/KWSYS_SIZEOF___INT64.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc    -o CMakeFiles/cmTC_14dab.dir/KWSYS_SIZEOF___INT64.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c:23:22: error: ‘__int64’ undeclared here (not in a function); did you mean ‘__int64_t’?
+ #define SIZE (sizeof(__int64))
+                      ^
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+gmake[1]: *** [CMakeFiles/cmTC_14dab.dir/build.make:66: CMakeFiles/cmTC_14dab.dir/KWSYS_SIZEOF___INT64.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_14dab/fast] Error 2
+
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CheckTypeSize/KWSYS_SIZEOF___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function printf exists in the ws2_32;m failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_e23c0/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_e23c0.dir/build.make CMakeFiles/cmTC_e23c0.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e23c0.dir/CheckFunctionExists.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=printf   -o CMakeFiles/cmTC_e23c0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_e23c0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_e23c0.dir/link.txt --verbose=1
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=printf    -rdynamic CMakeFiles/cmTC_e23c0.dir/CheckFunctionExists.c.o  -o cmTC_e23c0 -lws2_32 -lm 
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: cannot find -lws2_32
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_e23c0.dir/build.make:98: cmTC_e23c0] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_e23c0/fast] Error 2
+
+
+Determining if the function printf exists in the wsock32;m failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_58588/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_58588.dir/build.make CMakeFiles/cmTC_58588.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_58588.dir/CheckFunctionExists.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=printf   -o CMakeFiles/cmTC_58588.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘printf’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_58588
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_58588.dir/link.txt --verbose=1
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=printf    -rdynamic CMakeFiles/cmTC_58588.dir/CheckFunctionExists.c.o  -o cmTC_58588 -lwsock32 -lm 
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: cannot find -lwsock32
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_58588.dir/build.make:98: cmTC_58588] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_58588/fast] Error 2
+
+
+Determining if the function gethostname exists in the ucb;m failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_1682d/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_1682d.dir/build.make CMakeFiles/cmTC_1682d.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_1682d.dir/CheckFunctionExists.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=gethostname   -o CMakeFiles/cmTC_1682d.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_1682d
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_1682d.dir/link.txt --verbose=1
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=gethostname    -rdynamic CMakeFiles/cmTC_1682d.dir/CheckFunctionExists.c.o  -o cmTC_1682d -lucb -lm 
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: cannot find -lucb
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_1682d.dir/build.make:98: cmTC_1682d] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_1682d/fast] Error 2
+
+
+Determining if the function connect exists in the socket;m failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_096a1/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_096a1.dir/build.make CMakeFiles/cmTC_096a1.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_096a1.dir/CheckFunctionExists.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=connect   -o CMakeFiles/cmTC_096a1.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_096a1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_096a1.dir/link.txt --verbose=1
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=connect    -rdynamic CMakeFiles/cmTC_096a1.dir/CheckFunctionExists.c.o  -o cmTC_096a1 -lsocket -lm 
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: cannot find -lsocket
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_096a1.dir/build.make:98: cmTC_096a1] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_096a1/fast] Error 2
+
+
+Determining if files ;globus/common.h exist failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_80c10/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_80c10.dir/build.make CMakeFiles/cmTC_80c10.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_80c10.dir/CheckIncludeFiles.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc    -o CMakeFiles/cmTC_80c10.dir/CheckIncludeFiles.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: globus/common.h: No such file or directory
+ #include <globus/common.h>
+          ^~~~~~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_80c10.dir/build.make:66: CMakeFiles/cmTC_80c10.dir/CheckIncludeFiles.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_80c10/fast] Error 2
+
+Source:
+/* */
+#include <globus/common.h>
+
+
+int main(void){return 0;}
+
+Determining if files ;io.h exist failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_02f1e/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_02f1e.dir/build.make CMakeFiles/cmTC_02f1e.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_02f1e.dir/CheckIncludeFiles.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc    -o CMakeFiles/cmTC_02f1e.dir/CheckIncludeFiles.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: io.h: No such file or directory
+ #include <io.h>
+          ^~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_02f1e.dir/build.make:66: CMakeFiles/cmTC_02f1e.dir/CheckIncludeFiles.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_02f1e/fast] Error 2
+
+Source:
+/* */
+#include <io.h>
+
+
+int main(void){return 0;}
+
+Determining if files ;mfhdf.h exist failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_58393/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_58393.dir/build.make CMakeFiles/cmTC_58393.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_58393.dir/CheckIncludeFiles.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc    -o CMakeFiles/cmTC_58393.dir/CheckIncludeFiles.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: mfhdf.h: No such file or directory
+ #include <mfhdf.h>
+          ^~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_58393.dir/build.make:66: CMakeFiles/cmTC_58393.dir/CheckIncludeFiles.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_58393/fast] Error 2
+
+Source:
+/* */
+#include <mfhdf.h>
+
+
+int main(void){return 0;}
+
+Determining if files ;pdb.h exist failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_96f38/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_96f38.dir/build.make CMakeFiles/cmTC_96f38.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_96f38.dir/CheckIncludeFiles.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc    -o CMakeFiles/cmTC_96f38.dir/CheckIncludeFiles.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: pdb.h: No such file or directory
+ #include <pdb.h>
+          ^~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_96f38.dir/build.make:66: CMakeFiles/cmTC_96f38.dir/CheckIncludeFiles.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_96f38/fast] Error 2
+
+Source:
+/* */
+#include <pdb.h>
+
+
+int main(void){return 0;}
+
+Determining if files pthread.h;setjmp.h;srbclient.h exist failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_fed69/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_fed69.dir/build.make CMakeFiles/cmTC_fed69.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fed69.dir/CheckIncludeFiles.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc    -o CMakeFiles/cmTC_fed69.dir/CheckIncludeFiles.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:4:10: fatal error: srbclient.h: No such file or directory
+ #include <srbclient.h>
+          ^~~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_fed69.dir/build.make:66: CMakeFiles/cmTC_fed69.dir/CheckIncludeFiles.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_fed69/fast] Error 2
+
+Source:
+/* */
+#include <pthread.h>
+#include <setjmp.h>
+#include <srbclient.h>
+
+
+int main(void){return 0;}
+
+Determining if files pthread.h;setjmp.h;stddef.h;stdint.h;string.h;strings.h;sys/ioctl.h;sys/proc.h exist failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_2639a/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_2639a.dir/build.make CMakeFiles/cmTC_2639a.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2639a.dir/CheckIncludeFiles.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc    -o CMakeFiles/cmTC_2639a.dir/CheckIncludeFiles.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:9:10: fatal error: sys/proc.h: No such file or directory
+ #include <sys/proc.h>
+          ^~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_2639a.dir/build.make:66: CMakeFiles/cmTC_2639a.dir/CheckIncludeFiles.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_2639a/fast] Error 2
+
+Source:
+/* */
+#include <pthread.h>
+#include <setjmp.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/proc.h>
+
+
+int main(void){return 0;}
+
+Determining if files pthread.h;setjmp.h;stddef.h;stdint.h;string.h;strings.h;sys/ioctl.h;sys/resource.h;sys/socket.h;sys/stat.h;sys/time.h;time.h;sys/timeb.h;sys/types.h;unistd.h;stdlib.h;memory.h;dlfcn.h;features.h;inttypes.h;winsock.h exist failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_690e5/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_690e5.dir/build.make CMakeFiles/cmTC_690e5.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_690e5.dir/CheckIncludeFiles.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc    -o CMakeFiles/cmTC_690e5.dir/CheckIncludeFiles.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:22:10: fatal error: winsock.h: No such file or directory
+ #include <winsock.h>
+          ^~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_690e5.dir/build.make:66: CMakeFiles/cmTC_690e5.dir/CheckIncludeFiles.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_690e5/fast] Error 2
+
+Source:
+/* */
+#include <pthread.h>
+#include <setjmp.h>
+#include <stddef.h>
+#include <stdint.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/ioctl.h>
+#include <sys/resource.h>
+#include <sys/socket.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <sys/timeb.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <memory.h>
+#include <dlfcn.h>
+#include <features.h>
+#include <inttypes.h>
+#include <winsock.h>
+
+
+int main(void){return 0;}
+
+Determining size of __int64 failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_fd9f9/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_fd9f9.dir/build.make CMakeFiles/cmTC_fd9f9.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_fd9f9.dir/H5_SIZEOF___INT64.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc    -o CMakeFiles/cmTC_fd9f9.dir/H5_SIZEOF___INT64.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c:23:22: error: ‘__int64’ undeclared here (not in a function); did you mean ‘__int64_t’?
+ #define SIZE (sizeof(__int64))
+                      ^
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+gmake[1]: *** [CMakeFiles/cmTC_fd9f9.dir/build.make:66: CMakeFiles/cmTC_fd9f9.dir/H5_SIZEOF___INT64.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_fd9f9/fast] Error 2
+
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CheckTypeSize/H5_SIZEOF___INT64.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(__int64))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining size of off64_t failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_941a0/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_941a0.dir/build.make CMakeFiles/cmTC_941a0.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_941a0.dir/H5_SIZEOF_OFF64_T.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc    -o CMakeFiles/cmTC_941a0.dir/H5_SIZEOF_OFF64_T.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CheckTypeSize/H5_SIZEOF_OFF64_T.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CheckTypeSize/H5_SIZEOF_OFF64_T.c:23:22: error: ‘off64_t’ undeclared here (not in a function); did you mean ‘off_t’?
+ #define SIZE (sizeof(off64_t))
+                      ^
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CheckTypeSize/H5_SIZEOF_OFF64_T.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+gmake[1]: *** [CMakeFiles/cmTC_941a0.dir/build.make:66: CMakeFiles/cmTC_941a0.dir/H5_SIZEOF_OFF64_T.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_941a0/fast] Error 2
+
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CheckTypeSize/H5_SIZEOF_OFF64_T.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(off64_t))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the function setsysinfo exists failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_508b0/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_508b0.dir/build.make CMakeFiles/cmTC_508b0.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_508b0.dir/CheckFunctionExists.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=setsysinfo   -o CMakeFiles/cmTC_508b0.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_508b0
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_508b0.dir/link.txt --verbose=1
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=setsysinfo    -rdynamic CMakeFiles/cmTC_508b0.dir/CheckFunctionExists.c.o  -o cmTC_508b0 -lm 
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: CMakeFiles/cmTC_508b0.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `setsysinfo'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_508b0.dir/build.make:98: cmTC_508b0] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_508b0/fast] Error 2
+
+
+Determining if the function sigsetjmp exists failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_8b419/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_8b419.dir/build.make CMakeFiles/cmTC_8b419.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8b419.dir/CheckFunctionExists.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=sigsetjmp   -o CMakeFiles/cmTC_8b419.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_8b419
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_8b419.dir/link.txt --verbose=1
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=sigsetjmp    -rdynamic CMakeFiles/cmTC_8b419.dir/CheckFunctionExists.c.o  -o cmTC_8b419 -lm 
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: CMakeFiles/cmTC_8b419.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `sigsetjmp'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_8b419.dir/build.make:98: cmTC_8b419] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_8b419/fast] Error 2
+
+
+Performing Other Test HAVE_STRUCT_TIMEZONE failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_8a9f9/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_8a9f9.dir/build.make CMakeFiles/cmTC_8a9f9.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_8a9f9.dir/HDF5Tests.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DHAVE_STRUCT_TIMEZONE  -DH5_HAVE_SYS_TIME_H -DH5_HAVE_UNISTD_H -DH5_HAVE_SYS_TYPES_H -DH5_HAVE_SYS_SOCKET_H   -o CMakeFiles/cmTC_8a9f9.dir/HDF5Tests.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/HDF5Tests.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/HDF5Tests.c: In function ‘main’:
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/HDF5Tests.c:233:29: error: storage size of ‘tz’ isn’t known
+ SIMPLE_TEST(struct timezone tz; tz.tz_minuteswest=0);
+                             ^
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/HDF5Tests.c:1:36: note: in definition of macro ‘SIMPLE_TEST’
+ #define SIMPLE_TEST(x) int main(){ x; return 0; }
+                                    ^
+gmake[1]: *** [CMakeFiles/cmTC_8a9f9.dir/build.make:66: CMakeFiles/cmTC_8a9f9.dir/HDF5Tests.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_8a9f9/fast] Error 2
+
+Performing Other Test HAVE_SOCKLEN_T failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_18648/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_18648.dir/build.make CMakeFiles/cmTC_18648.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_18648.dir/HDF5Tests.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DHAVE_SOCKLEN_T  -DH5_HAVE_SYS_TIME_H -DH5_HAVE_UNISTD_H -DH5_HAVE_SYS_TYPES_H -DH5_HAVE_SYS_SOCKET_H   -o CMakeFiles/cmTC_18648.dir/HDF5Tests.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/HDF5Tests.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/HDF5Tests.c: In function ‘main’:
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/HDF5Tests.c:308:13: error: unknown type name ‘socklen_t’; did you mean ‘__socklen_t’?
+ SIMPLE_TEST(socklen_t foo);
+             ^
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/HDF5Tests.c:1:36: note: in definition of macro ‘SIMPLE_TEST’
+ #define SIMPLE_TEST(x) int main(){ x; return 0; }
+                                    ^
+gmake[1]: *** [CMakeFiles/cmTC_18648.dir/build.make:66: CMakeFiles/cmTC_18648.dir/HDF5Tests.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_18648/fast] Error 2
+
+Performing Other Test DEV_T_IS_SCALAR failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_d7a68/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_d7a68.dir/build.make CMakeFiles/cmTC_d7a68.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_d7a68.dir/HDF5Tests.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DDEV_T_IS_SCALAR  -DH5_HAVE_SYS_TIME_H -DH5_HAVE_UNISTD_H -DH5_HAVE_SYS_TYPES_H -DH5_HAVE_SYS_SOCKET_H   -o CMakeFiles/cmTC_d7a68.dir/HDF5Tests.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/HDF5Tests.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/HDF5Tests.c: In function ‘main’:
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/HDF5Tests.c:320:3: error: unknown type name ‘dev_t’
+   dev_t d1, d2;
+   ^~~~~
+gmake[1]: *** [CMakeFiles/cmTC_d7a68.dir/build.make:66: CMakeFiles/cmTC_d7a68.dir/HDF5Tests.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_d7a68/fast] Error 2
+
+Performing Other Test HAVE_OFF64_T failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_cc6c7/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_cc6c7.dir/build.make CMakeFiles/cmTC_cc6c7.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_cc6c7.dir/HDF5Tests.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DHAVE_OFF64_T  -DH5_HAVE_SYS_TIME_H -DH5_HAVE_UNISTD_H -DH5_HAVE_SYS_TYPES_H -DH5_HAVE_SYS_SOCKET_H   -o CMakeFiles/cmTC_cc6c7.dir/HDF5Tests.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/HDF5Tests.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/HDF5Tests.c: In function ‘main’:
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/HDF5Tests.c:342:3: error: unknown type name ‘off64_t’; did you mean ‘off_t’?
+   off64_t n = 0;
+   ^~~~~~~
+   off_t
+gmake[1]: *** [CMakeFiles/cmTC_cc6c7.dir/build.make:66: CMakeFiles/cmTC_cc6c7.dir/HDF5Tests.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_cc6c7/fast] Error 2
+
+Performing Other Test GETTIMEOFDAY_GIVES_TZ failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_a4cf5/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_a4cf5.dir/build.make CMakeFiles/cmTC_a4cf5.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_a4cf5.dir/HDF5Tests.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DGETTIMEOFDAY_GIVES_TZ  -DH5_HAVE_SYS_TIME_H -DH5_HAVE_UNISTD_H -DH5_HAVE_SYS_TYPES_H -DH5_HAVE_SYS_SOCKET_H   -o CMakeFiles/cmTC_a4cf5.dir/HDF5Tests.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/HDF5Tests.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/HDF5Tests.c: In function ‘main’:
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/HDF5Tests.c:355:17: error: storage size of ‘tv’ isn’t known
+  struct timeval tv;
+                 ^~
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/HDF5Tests.c:356:18: error: storage size of ‘tz’ isn’t known
+  struct timezone tz;
+                  ^~
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/HDF5Tests.c:359:2: warning: implicit declaration of function ‘gettimeofday’ [-Wimplicit-function-declaration]
+  gettimeofday(&tv, &tz);
+  ^~~~~~~~~~~~
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/HDF5Tests.c:362:5: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+     exit(1);
+     ^~~~
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/HDF5Tests.c:362:5: warning: incompatible implicit declaration of built-in function ‘exit’
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/HDF5Tests.c:362:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/HDF5Tests.c:363:7: warning: incompatible implicit declaration of built-in function ‘exit’
+  else exit (0);
+       ^~~~
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/HDF5Tests.c:363:7: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+gmake[1]: *** [CMakeFiles/cmTC_a4cf5.dir/build.make:66: CMakeFiles/cmTC_a4cf5.dir/HDF5Tests.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_a4cf5/fast] Error 2
+
+Test H5_ULONG_TO_FP_BOTTOM_BIT_ACCURATE Run failed with the following output and exit code:
+ Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/CMake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_ae1d2/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_ae1d2.dir/build.make CMakeFiles/cmTC_ae1d2.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/CMake/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_ae1d2.dir/ConversionTests.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DH5_ULONG_TO_FP_BOTTOM_BIT_ACCURATE_TEST   -o CMakeFiles/cmTC_ae1d2.dir/ConversionTests.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/ConversionTests.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/ConversionTests.c: In function ‘main’:
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/ConversionTests.c:420:5: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+     exit(ret);
+     ^~~~
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/ConversionTests.c:420:5: warning: incompatible implicit declaration of built-in function ‘exit’
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/ConversionTests.c:420:5: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+Linking C executable cmTC_ae1d2
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_ae1d2.dir/link.txt --verbose=1
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DH5_ULONG_TO_FP_BOTTOM_BIT_ACCURATE_TEST    -rdynamic CMakeFiles/cmTC_ae1d2.dir/ConversionTests.c.o  -o cmTC_ae1d2 
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/CMake/CMakeFiles/CMakeTmp'
+
+Test H5_FP_TO_ULLONG_RIGHT_MAXIMUM Run failed with the following output and exit code:
+ Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/CMake/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_08938/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_08938.dir/build.make CMakeFiles/cmTC_08938.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/CMake/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_08938.dir/ConversionTests.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DH5_FP_TO_ULLONG_RIGHT_MAXIMUM_TEST   -o CMakeFiles/cmTC_08938.dir/ConversionTests.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/ConversionTests.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/ConversionTests.c: In function ‘main’:
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/ConversionTests.c:59:3: warning: implicit declaration of function ‘exit’ [-Wimplicit-function-declaration]
+   exit(ret);
+   ^~~~
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/ConversionTests.c:59:3: warning: incompatible implicit declaration of built-in function ‘exit’
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/Resources/ConversionTests.c:59:3: note: include ‘<stdlib.h>’ or provide a declaration of ‘exit’
+Linking C executable cmTC_08938
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_08938.dir/link.txt --verbose=1
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DH5_FP_TO_ULLONG_RIGHT_MAXIMUM_TEST    -rdynamic CMakeFiles/cmTC_08938.dir/ConversionTests.c.o  -o cmTC_08938 
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtkhdf5/CMake/CMakeFiles/CMakeTmp'
+
+Determining if files windows.h exist failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_75cf8/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_75cf8.dir/build.make CMakeFiles/cmTC_75cf8.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_75cf8.dir/CheckIncludeFiles.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc    -o CMakeFiles/cmTC_75cf8.dir/CheckIncludeFiles.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: windows.h: No such file or directory
+ #include <windows.h>
+          ^~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_75cf8.dir/build.make:66: CMakeFiles/cmTC_75cf8.dir/CheckIncludeFiles.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_75cf8/fast] Error 2
+
+Source:
+/* */
+#include <windows.h>
+
+
+int main(void){return 0;}
+
+Determining if files ieeefp.h exist failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_44a8f/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_44a8f.dir/build.make CMakeFiles/cmTC_44a8f.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_44a8f.dir/CheckIncludeFiles.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc    -o CMakeFiles/cmTC_44a8f.dir/CheckIncludeFiles.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:2:10: fatal error: ieeefp.h: No such file or directory
+ #include <ieeefp.h>
+          ^~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_44a8f.dir/build.make:66: CMakeFiles/cmTC_44a8f.dir/CheckIncludeFiles.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_44a8f/fast] Error 2
+
+Source:
+/* */
+#include <ieeefp.h>
+
+
+int main(void){return 0;}
+
+Determining if the function floor exists failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_02790/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_02790.dir/build.make CMakeFiles/cmTC_02790.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_02790.dir/CheckFunctionExists.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=floor   -o CMakeFiles/cmTC_02790.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘floor’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_02790
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_02790.dir/link.txt --verbose=1
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=floor    -rdynamic CMakeFiles/cmTC_02790.dir/CheckFunctionExists.c.o  -o cmTC_02790 
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: CMakeFiles/cmTC_02790.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `floor'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_02790.dir/build.make:98: cmTC_02790] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_02790/fast] Error 2
+
+
+Determining if the function pow exists failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_4c9d8/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_4c9d8.dir/build.make CMakeFiles/cmTC_4c9d8.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_4c9d8.dir/CheckFunctionExists.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=pow   -o CMakeFiles/cmTC_4c9d8.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘pow’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_4c9d8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c9d8.dir/link.txt --verbose=1
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=pow    -rdynamic CMakeFiles/cmTC_4c9d8.dir/CheckFunctionExists.c.o  -o cmTC_4c9d8 
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: CMakeFiles/cmTC_4c9d8.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `pow'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_4c9d8.dir/build.make:98: cmTC_4c9d8] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_4c9d8/fast] Error 2
+
+
+Determining if the function sqrt exists failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_be2c1/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_be2c1.dir/build.make CMakeFiles/cmTC_be2c1.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_be2c1.dir/CheckFunctionExists.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=sqrt   -o CMakeFiles/cmTC_be2c1.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+<command-line>:0:23: warning: conflicting types for built-in function ‘sqrt’ [-Wbuiltin-declaration-mismatch]
+/usr/share/cmake/Modules/CheckFunctionExists.c:7:3: note: in expansion of macro ‘CHECK_FUNCTION_EXISTS’
+   CHECK_FUNCTION_EXISTS(void);
+   ^~~~~~~~~~~~~~~~~~~~~
+Linking C executable cmTC_be2c1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_be2c1.dir/link.txt --verbose=1
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=sqrt    -rdynamic CMakeFiles/cmTC_be2c1.dir/CheckFunctionExists.c.o  -o cmTC_be2c1 
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: CMakeFiles/cmTC_be2c1.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `sqrt'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_be2c1.dir/build.make:98: cmTC_be2c1] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_be2c1/fast] Error 2
+
+
+Determining if the function areroul exists failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_31f15/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_31f15.dir/build.make CMakeFiles/cmTC_31f15.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_31f15.dir/CheckFunctionExists.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=areroul   -o CMakeFiles/cmTC_31f15.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_31f15
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_31f15.dir/link.txt --verbose=1
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=areroul    -rdynamic CMakeFiles/cmTC_31f15.dir/CheckFunctionExists.c.o  -o cmTC_31f15 
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: CMakeFiles/cmTC_31f15.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `areroul'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_31f15.dir/build.make:98: cmTC_31f15] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_31f15/fast] Error 2
+
+
+Determining if the function shl_load exists in the dld;dl failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_79478/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_79478.dir/build.make CMakeFiles/cmTC_79478.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_79478.dir/CheckFunctionExists.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=shl_load   -o CMakeFiles/cmTC_79478.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_79478
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_79478.dir/link.txt --verbose=1
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=shl_load    -rdynamic CMakeFiles/cmTC_79478.dir/CheckFunctionExists.c.o  -o cmTC_79478 -ldld -ldl 
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: cannot find -ldld
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_79478.dir/build.make:98: cmTC_79478] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_79478/fast] Error 2
+
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;ansidecl.h exist failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_f558e/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_f558e.dir/build.make CMakeFiles/cmTC_f558e.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_f558e.dir/CheckIncludeFiles.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc -D_GNU_SOURCE   -o CMakeFiles/cmTC_f558e.dir/CheckIncludeFiles.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:25:10: fatal error: ansidecl.h: No such file or directory
+ #include <ansidecl.h>
+          ^~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_f558e.dir/build.make:66: CMakeFiles/cmTC_f558e.dir/CheckIncludeFiles.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_f558e/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <ansidecl.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;arpa/inet.h;arpa/nameser.h;ctype.h;dirent.h;dl.h exist failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_dc7c5/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_dc7c5.dir/build.make CMakeFiles/cmTC_dc7c5.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_dc7c5.dir/CheckIncludeFiles.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc -D_GNU_SOURCE   -o CMakeFiles/cmTC_dc7c5.dir/CheckIncludeFiles.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:29:10: fatal error: dl.h: No such file or directory
+ #include <dl.h>
+          ^~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_dc7c5.dir/build.make:66: CMakeFiles/cmTC_dc7c5.dir/CheckIncludeFiles.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_dc7c5/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <dl.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;arpa/inet.h;arpa/nameser.h;ctype.h;dirent.h;float.h;fp_class.h exist failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_71997/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_71997.dir/build.make CMakeFiles/cmTC_71997.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_71997.dir/CheckIncludeFiles.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc -D_GNU_SOURCE   -o CMakeFiles/cmTC_71997.dir/CheckIncludeFiles.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:30:10: fatal error: fp_class.h: No such file or directory
+ #include <fp_class.h>
+          ^~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_71997.dir/build.make:66: CMakeFiles/cmTC_71997.dir/CheckIncludeFiles.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_71997/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <fp_class.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;arpa/inet.h;arpa/nameser.h;ctype.h;dirent.h;float.h;math.h;nan.h exist failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_b75e6/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_b75e6.dir/build.make CMakeFiles/cmTC_b75e6.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b75e6.dir/CheckIncludeFiles.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc -D_GNU_SOURCE   -o CMakeFiles/cmTC_b75e6.dir/CheckIncludeFiles.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:31:10: fatal error: nan.h: No such file or directory
+ #include <nan.h>
+          ^~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_b75e6.dir/build.make:66: CMakeFiles/cmTC_b75e6.dir/CheckIncludeFiles.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_b75e6/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <math.h>
+#include <nan.h>
+
+
+int main(void){return 0;}
+
+Determining if files stdio.h;stddef.h;sys/types.h;inttypes.h;dlfcn.h;fcntl.h;malloc.h;memory.h;netdb.h;limits.h;sys/socket.h;netinet/in.h;sys/select.h;stdint.h;stdlib.h;string.h;strings.h;sys/stat.h;sys/time.h;time.h;unistd.h;signal.h;errno.h;arpa/inet.h;arpa/nameser.h;ctype.h;dirent.h;float.h;math.h;ndir.h exist failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_b168c/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_b168c.dir/build.make CMakeFiles/cmTC_b168c.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b168c.dir/CheckIncludeFiles.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc -D_GNU_SOURCE   -o CMakeFiles/cmTC_b168c.dir/CheckIncludeFiles.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckIncludeFiles.c:31:10: fatal error: ndir.h: No such file or directory
+ #include <ndir.h>
+          ^~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_b168c.dir/build.make:66: CMakeFiles/cmTC_b168c.dir/CheckIncludeFiles.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_b168c/fast] Error 2
+
+Source:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <math.h>
+#include <ndir.h>
+
+
+int main(void){return 0;}
+
+Determining if the fpclass exist failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_befff/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_befff.dir/build.make CMakeFiles/cmTC_befff.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_befff.dir/CheckSymbolExists.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc -D_GNU_SOURCE   -o CMakeFiles/cmTC_befff.dir/CheckSymbolExists.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: error: ‘fpclass’ undeclared (first use in this function); did you mean ‘p_class’?
+   return ((int*)(&fpclass))[argc];
+                   ^~~~~~~
+                   p_class
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_befff.dir/build.make:66: CMakeFiles/cmTC_befff.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_befff/fast] Error 2
+
+File /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <math.h>
+#include <pthread.h>
+#include <resolv.h>
+#include <stdarg.h>
+#include <sys/mman.h>
+#include <sys/timeb.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fpclass
+  return ((int*)(&fpclass))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the fp_class exist failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_2ac10/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_2ac10.dir/build.make CMakeFiles/cmTC_2ac10.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2ac10.dir/CheckSymbolExists.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc -D_GNU_SOURCE   -o CMakeFiles/cmTC_2ac10.dir/CheckSymbolExists.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: error: ‘fp_class’ undeclared (first use in this function); did you mean ‘p_class’?
+   return ((int*)(&fp_class))[argc];
+                   ^~~~~~~~
+                   p_class
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_2ac10.dir/build.make:66: CMakeFiles/cmTC_2ac10.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_2ac10/fast] Error 2
+
+File /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <math.h>
+#include <pthread.h>
+#include <resolv.h>
+#include <stdarg.h>
+#include <sys/mman.h>
+#include <sys/timeb.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef fp_class
+  return ((int*)(&fp_class))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the _stat exist failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_6c5ce/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_6c5ce.dir/build.make CMakeFiles/cmTC_6c5ce.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_6c5ce.dir/CheckSymbolExists.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc -D_GNU_SOURCE   -o CMakeFiles/cmTC_6c5ce.dir/CheckSymbolExists.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: error: ‘_stat’ undeclared (first use in this function); did you mean ‘lstat’?
+   return ((int*)(&_stat))[argc];
+                   ^~~~~
+                   lstat
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c:41:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_6c5ce.dir/build.make:66: CMakeFiles/cmTC_6c5ce.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_6c5ce/fast] Error 2
+
+File /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <stdio.h>
+#include <stddef.h>
+#include <sys/types.h>
+#include <inttypes.h>
+#include <dlfcn.h>
+#include <fcntl.h>
+#include <malloc.h>
+#include <memory.h>
+#include <netdb.h>
+#include <limits.h>
+#include <sys/socket.h>
+#include <netinet/in.h>
+#include <sys/select.h>
+#include <stdint.h>
+#include <stdlib.h>
+#include <string.h>
+#include <strings.h>
+#include <sys/stat.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <signal.h>
+#include <errno.h>
+#include <arpa/inet.h>
+#include <arpa/nameser.h>
+#include <ctype.h>
+#include <dirent.h>
+#include <float.h>
+#include <math.h>
+#include <pthread.h>
+#include <resolv.h>
+#include <stdarg.h>
+#include <sys/mman.h>
+#include <sys/timeb.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _stat
+  return ((int*)(&_stat))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Checking for DIR in sys/ndir.h failed to compile with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtklibxml2/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_2252a/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_2252a.dir/build.make CMakeFiles/cmTC_2252a.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtklibxml2/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_2252a.dir/platformTestsC.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc -DTEST_HAVE_SYS_NDIR_H   -o CMakeFiles/cmTC_2252a.dir/platformTestsC.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtklibxml2/platformTestsC.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtklibxml2/platformTestsC.c:82:10: fatal error: sys/ndir.h: No such file or directory
+ #include <sys/ndir.h>
+          ^~~~~~~~~~~~
+compilation terminated.
+gmake[1]: *** [CMakeFiles/cmTC_2252a.dir/build.make:66: CMakeFiles/cmTC_2252a.dir/platformTestsC.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtklibxml2/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_2252a/fast] Error 2
+
+
+Determining size of uchar failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_e1c1a/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_e1c1a.dir/build.make CMakeFiles/cmTC_e1c1a.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_e1c1a.dir/SIZEOF_UCHAR.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc    -o CMakeFiles/cmTC_e1c1a.dir/SIZEOF_UCHAR.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:23:22: error: ‘uchar’ undeclared here (not in a function); did you mean ‘u_char’?
+ #define SIZE (sizeof(uchar))
+                      ^
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:25:12: note: in expansion of macro ‘SIZE’
+   ('0' + ((SIZE / 10000)%10)),
+            ^~~~
+gmake[1]: *** [CMakeFiles/cmTC_e1c1a.dir/build.make:66: CMakeFiles/cmTC_e1c1a.dir/SIZEOF_UCHAR.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_e1c1a/fast] Error 2
+
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CheckTypeSize/SIZEOF_UCHAR.c:
+#include <sys/types.h>
+#include <stdint.h>
+#include <stddef.h>
+
+
+#undef KEY
+#if defined(__i386)
+# define KEY '_','_','i','3','8','6'
+#elif defined(__x86_64)
+# define KEY '_','_','x','8','6','_','6','4'
+#elif defined(__ppc__)
+# define KEY '_','_','p','p','c','_','_'
+#elif defined(__ppc64__)
+# define KEY '_','_','p','p','c','6','4','_','_'
+#elif defined(__aarch64__)
+# define KEY '_','_','a','a','r','c','h','6','4','_','_'
+#elif defined(__ARM_ARCH_7A__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','A','_','_'
+#elif defined(__ARM_ARCH_7S__)
+# define KEY '_','_','A','R','M','_','A','R','C','H','_','7','S','_','_'
+#endif
+
+#define SIZE (sizeof(uchar))
+char info_size[] =  {'I', 'N', 'F', 'O', ':', 's','i','z','e','[',
+  ('0' + ((SIZE / 10000)%10)),
+  ('0' + ((SIZE / 1000)%10)),
+  ('0' + ((SIZE / 100)%10)),
+  ('0' + ((SIZE / 10)%10)),
+  ('0' +  (SIZE    % 10)),
+  ']',
+#ifdef KEY
+  ' ','k','e','y','[', KEY, ']',
+#endif
+  '\0'};
+
+#ifdef __CLASSIC_C__
+int main(argc, argv) int argc; char *argv[];
+#else
+int main(int argc, char *argv[])
+#endif
+{
+  int require = 0;
+  require += info_size[argc];
+  (void)argv;
+  return require;
+}
+
+
+Determining if the isnan exist failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_127e5/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_127e5.dir/build.make CMakeFiles/cmTC_127e5.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_127e5.dir/CheckSymbolExists.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc    -o CMakeFiles/cmTC_127e5.dir/CheckSymbolExists.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘isnan’ undeclared (first use in this function)
+   return ((int*)(&isnan))[argc];
+                   ^~~~~
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_127e5.dir/build.make:66: CMakeFiles/cmTC_127e5.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_127e5/fast] Error 2
+
+File /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef isnan
+  return ((int*)(&isnan))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the _isnan exist failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_25103/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_25103.dir/build.make CMakeFiles/cmTC_25103.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_25103.dir/CheckSymbolExists.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc    -o CMakeFiles/cmTC_25103.dir/CheckSymbolExists.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘_isnan’ undeclared (first use in this function)
+   return ((int*)(&_isnan))[argc];
+                   ^~~~~~
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_25103.dir/build.make:66: CMakeFiles/cmTC_25103.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_25103/fast] Error 2
+
+File /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef _isnan
+  return ((int*)(&_isnan))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the isinf exist failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_b75e9/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_b75e9.dir/build.make CMakeFiles/cmTC_b75e9.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_b75e9.dir/CheckSymbolExists.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc    -o CMakeFiles/cmTC_b75e9.dir/CheckSymbolExists.c.o   -c /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c: In function ‘main’:
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: error: ‘isinf’ undeclared (first use in this function)
+   return ((int*)(&isinf))[argc];
+                   ^~~~~
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c:8:19: note: each undeclared identifier is reported only once for each function it appears in
+gmake[1]: *** [CMakeFiles/cmTC_b75e9.dir/build.make:66: CMakeFiles/cmTC_b75e9.dir/CheckSymbolExists.c.o] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_b75e9/fast] Error 2
+
+File /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp/CheckSymbolExists.c:
+/* */
+#include <float.h>
+
+int main(int argc, char** argv)
+{
+  (void)argv;
+#ifndef isinf
+  return ((int*)(&isinf))[argc];
+#else
+  (void)argc;
+  return 0;
+#endif
+}
+
+Determining if the function _isinf exists failed with the following output:
+Change Dir: /home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/gmake" "cmTC_17193/fast"
+/usr/bin/gmake -f CMakeFiles/cmTC_17193.dir/build.make CMakeFiles/cmTC_17193.dir/build
+gmake[1]: Entering directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_17193.dir/CheckFunctionExists.c.o
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=_isinf   -o CMakeFiles/cmTC_17193.dir/CheckFunctionExists.c.o   -c /usr/share/cmake/Modules/CheckFunctionExists.c
+Linking C executable cmTC_17193
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_17193.dir/link.txt --verbose=1
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc   -DCHECK_FUNCTION_EXISTS=_isinf    -rdynamic CMakeFiles/cmTC_17193.dir/CheckFunctionExists.c.o  -o cmTC_17193 
+/usr/lib64/gcc/x86_64-suse-linux/7/../../../../x86_64-suse-linux/bin/ld: CMakeFiles/cmTC_17193.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x10): undefined reference to `_isinf'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_17193.dir/build.make:98: cmTC_17193] Error 1
+gmake[1]: Leaving directory '/home/chris/crimson/petsc/vtk/vtk-v5.8.0/CMakeFiles/CMakeTmp'
+gmake: *** [Makefile:126: cmTC_17193/fast] Error 2
+
+

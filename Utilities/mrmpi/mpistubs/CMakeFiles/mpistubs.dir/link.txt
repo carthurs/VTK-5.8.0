@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../../bin/libmpistubs.a  CMakeFiles/mpistubs.dir/mpi.cpp.o
+/usr/bin/ranlib ../../../bin/libmpistubs.a

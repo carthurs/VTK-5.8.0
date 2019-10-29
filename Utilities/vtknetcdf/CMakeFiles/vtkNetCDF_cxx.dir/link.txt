@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../bin/libvtkNetCDF_cxx.a  CMakeFiles/vtkNetCDF_cxx.dir/netcdf.cpp.o CMakeFiles/vtkNetCDF_cxx.dir/ncvalues.cpp.o
+/usr/bin/ranlib ../../bin/libvtkNetCDF_cxx.a

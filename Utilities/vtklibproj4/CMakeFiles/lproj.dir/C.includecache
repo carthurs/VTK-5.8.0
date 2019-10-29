@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtklibproj4/lproj.c
+stdio.h
+-
+stdlib.h
+-
+ctype.h
+-
+string.h
+-
+errno.h
+-
+stdarg.h
+-
+proj_config.h
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtklibproj4/proj_config.h
+lib_proj.h
+-
+
+Utilities/vtklibproj4/lib_proj.h
+proj_config.h
+Utilities/vtklibproj4/proj_config.h
+math.h
+-
+stdlib.h
+-
+
+Utilities/vtklibproj4/vtk_libproj4_mangle.h
+
+proj_config.h
+vtk_libproj4_mangle.h
+vtk_libproj4_mangle.h
+

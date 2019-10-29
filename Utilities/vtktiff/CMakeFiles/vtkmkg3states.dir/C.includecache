@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^(tif|fax|port|uv|vtk|tconf|t4|mk|z).*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtktiff/mkg3states.c
+tif_config.h
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtktiff/tif_config.h
+tif_fax3.h
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtktiff/tif_fax3.h
+
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtktiff/tif_config.h
+
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtktiff/tif_fax3.h
+tiff.h
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtktiff/tiff.h
+
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtktiff/tiff.h
+vtk_tiff_mangle.h
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtktiff/vtk_tiff_mangle.h
+tiffconf.h
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtktiff/tiffconf.h
+
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtktiff/tiffconf.h
+
+/home/chris/crimson/petsc/vtk/vtk-v5.8.0/Utilities/vtktiff/vtk_tiff_mangle.h
+

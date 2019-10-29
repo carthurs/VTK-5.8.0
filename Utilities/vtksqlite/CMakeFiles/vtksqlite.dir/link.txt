@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../bin/libvtksqlite.a  CMakeFiles/vtksqlite.dir/vtk_sqlite3.c.o
+/usr/bin/ranlib ../../bin/libvtksqlite.a

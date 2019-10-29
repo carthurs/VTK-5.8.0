@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../bin/libvtkDICOMParser.a  CMakeFiles/vtkDICOMParser.dir/DICOMFile.cxx.o CMakeFiles/vtkDICOMParser.dir/DICOMParser.cxx.o CMakeFiles/vtkDICOMParser.dir/DICOMAppHelper.cxx.o
+/usr/bin/ranlib ../../bin/libvtkDICOMParser.a

@@ -1,0 +1,2 @@
+/usr/bin/ar qc ../../bin/libvtkverdict.a  CMakeFiles/vtkverdict.dir/V_EdgeMetric.o CMakeFiles/vtkverdict.dir/V_GaussIntegration.o CMakeFiles/vtkverdict.dir/V_HexMetric.o CMakeFiles/vtkverdict.dir/V_KnifeMetric.o CMakeFiles/vtkverdict.dir/V_PyramidMetric.o CMakeFiles/vtkverdict.dir/V_QuadMetric.o CMakeFiles/vtkverdict.dir/V_TetMetric.o CMakeFiles/vtkverdict.dir/V_TriMetric.o CMakeFiles/vtkverdict.dir/VerdictVector.o CMakeFiles/vtkverdict.dir/V_WedgeMetric.o
+/usr/bin/ranlib ../../bin/libvtkverdict.a

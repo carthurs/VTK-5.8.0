@@ -1,0 +1,1 @@
+/usr/lib64/mpi/gcc/openmpi/bin/mpicc    -std=c99 -fomit-frame-pointer -finline-functions -fno-common -w -fmessage-length=0 -g    -rdynamic CMakeFiles/H5detect.dir/H5detect.c.o  -o ../../../bin/H5detect 
