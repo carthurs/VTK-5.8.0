@@ -22,22 +22,28 @@ if(CMAKE_COMPILER_IS_GNUCXX)
     #  "-Wl,--fatal-warnings -Wl,--no-undefined -lc ${CMAKE_SHARED_LINKER_FLAGS}")
   endif()
 
-  # Now check if we can use visibility to selectively export symbols
-  exec_program(${CMAKE_C_COMPILER} ARGS --version OUTPUT_VARIABLE
-    _gcc_version_info)
-  string (REGEX MATCH "[345678]\\.[0-9]\\.[0-9]" 
-    _gcc_version "${_gcc_version_info}")
-  if(NOT _gcc_version)
-    string (REGEX REPLACE ".*\\(GCC\\).* ([345678]\\.[0-9]) .*" "\\1.0" 
-      _gcc_version "${_gcc_version_info}")
-  endif()
+
+  # [AJM] The whole GCC version check is buggy and was only used with GCCs that are older than 4.2.0, I'm going to just remove this
+  # and assume GCC is newer than that, GCC 4 is very old.
+
+  # # Now check if we can use visibility to selectively export symbols
+  # exec_program(${CMAKE_C_COMPILER} ARGS --version OUTPUT_VARIABLE _gcc_version_info)
+  # message("_gcc_version_info is " ${_gcc_version_info})
+
+  # string (REGEX MATCH "[3456789]\\.[0-9]\\.[0-9]" _gcc_version "${_gcc_version_info}")
+  # if(NOT _gcc_version)
+  #   string (REGEX REPLACE ".*\\(GCC\\).* ([345678]\\.[0-9]) .*" "\\1.0"  _gcc_version "${_gcc_version_info}")
+  # endif()
   
   # GCC visibility support, on by default and in testing.
   check_cxx_compiler_flag(-fvisibility=hidden HAVE_GCC_VISIBILITY)
   option(VTK_USE_GCC_VISIBILITY "Use GCC visibility support if available." ON)
   mark_as_advanced(VTK_USE_GCC_VISIBILITY)
 
-  if(${_gcc_version} VERSION_GREATER 4.2.0 AND BUILD_SHARED_LIBS
+  if(
+    # [AJM] we now assume GCC is newer than 4.2.0
+    #${_gcc_version} VERSION_GREATER 4.2.0 AND 
+    BUILD_SHARED_LIBS
     AND HAVE_GCC_VISIBILITY AND VTK_USE_GCC_VISIBILITY
     AND NOT MINGW AND NOT CYGWIN)
     # Should only be set if GCC is newer than 4.2.0
